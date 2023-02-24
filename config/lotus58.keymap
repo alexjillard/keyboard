@@ -38,9 +38,9 @@
 };
 
 / {
-    chosen {
-        zmk,underglow = &led_strip;
-    };
+    /*chosen {
+        zmk,underglow = &led_strip; // LEDs don't seem to work well
+    };*/
     combos {
         compatible = "zmk,combos";
         combo_dsklg {
