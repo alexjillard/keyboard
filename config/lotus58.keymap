@@ -99,9 +99,9 @@
 // |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |  |>  |  <|<| | |>|> |       |       |
 //                     |       |       |      |      |  |      |      |      |       |       
             bindings = <
-&trans      &trans      &trans      &trans      &trans      &trans                    &out OUT_TOG  &out OUT_USB  &out OUT_BLE  &trans     &sys_reset  &bootloader
-&trans      &kp INS     &kp PSCRN   &kp K_CMENU &sys_reset      &trans                          &kp PG_UP     &trans        &kp UP        &trans     &trans  &trans
-&trans      &trans      &trans      &trans      &bootloader &trans     &trans   &trans    &kp PG_DN     &kp LEFT      &kp DOWN      &kp RIGHT  &kp DEL &kp BSPC
+&trans      &trans      &trans      &trans      &trans      &trans                    &out OUT_TOG  &out OUT_USB  &out OUT_BLE  &trans     &trans  &trans
+&trans      &kp INS     &kp PSCRN   &kp K_CMENU &trans      &trans                          &kp PG_UP     &trans        &kp UP        &trans     &trans  &trans
+&trans      &trans      &trans      &trans      &trans      &trans     &trans   &trans    &kp PG_DN     &kp LEFT      &kp DOWN      &kp RIGHT  &kp DEL &kp BSPC
 &trans      &trans      &trans      &trans      &trans      &trans       &trans   &trans    &trans        &trans      &trans    &trans          &trans  &trans
                                      &trans       &trans       &trans       &trans   &trans    &trans        &trans        &trans   
             >;
