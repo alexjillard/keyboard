@@ -28,45 +28,6 @@
         };        
     };
 
-    behaviors {
-        fofunc: four_ffour {
-            compatible = "zmk,behavior-mod-morph";
-            label = "FOUR_FUNCFOUR";
-            #binding-cells = <0>;
-            bindings = <&kp N4>, <&kp F4>;
-            mods = <(MOD_LALT|MOD_RALT)>;
-            keep-mods=<(MOD_LALT|MOD_RALT)>;
-        };
-        sleft: s_left {
-            compatible = "zmk,behavior-mod-morph";
-            label = "S_LEFT";
-            #binding-cells = <0>;
-            bindings = <&kp S>, <&kp LEFT>;
-            mods = <(MOD_LGUI|MOD_LGUI)>;
-        };
-        fright: f_right {
-            compatible = "zmk,behavior-mod-morph";
-            label = "R_RIGHT";
-            #binding-cells = <0>;
-            bindings = <&kp F>, <&kp RIGHT>;
-            mods = <(MOD_LGUI|MOD_LGUI)>;
-        };
-        eup: e_up {
-            compatible = "zmk,behavior-mod-morph";
-            label = "E_UP";
-            #binding-cells = <0>;
-            bindings = <&kp E>, <&kp UP>;
-            mods = <(MOD_LGUI|MOD_LGUI)>;
-        };
-        ddown: d_down {
-            compatible = "zmk,behavior-mod-morph";
-            label = "D_DOWN";
-            #binding-cells = <0>;
-            bindings = <&kp D>, <&kp DOWN>;
-            mods = <(MOD_LGUI|MOD_LGUI)>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -78,9 +39,9 @@
 // 38|  SHFT ( |  Z  |  X  |  C   |  V   |  B   |  MUTE   |  | PLAY   |  N   |  M    |  ,    |  .   |   /   | \ CTRL| 51
 // 52                    |ENT RS|  ALT | SPACE|DELETE LW|  |ENTER RS| BSPC |  ] LW | RGUI  |                        59
             bindings = <
-&lt BLE ESC   &kp N1 &kp N2   &kp N3     &fofunc   &kp N5                               &kp N6    &kp N7      &kp N8    &kp N9   &kp N0   &lt BLE GRAVE
-&kp TAB   &kp Q  &kp W    &eup      &kp R     &kp T                                &kp Y     &kp U       &kp I     &kp O    &kp P    &kp MINUS
-&mt LCTRL LBKT &kp A  &sleft   &ddown      &fright   &kp G      &sys_reset         &sys_reset     &kp H     &lt ARROW J       &kp K     &kp L    &kp SEMI &mt RBKT SQT
+&lt BLE ESC   &kp N1 &kp N2   &kp N3     &kp N4   &kp N5                               &kp N6    &kp N7      &kp N8    &kp N9   &kp N0   &lt BLE GRAVE
+&kp TAB   &kp Q  &kp W    &kp E      &kp R     &kp T                                &kp Y     &kp U       &kp I     &kp O    &kp P    &kp MINUS
+&mt LCTRL LBKT &kp A  &kp S   &kp D      &kp F   &kp G      &sys_reset         &sys_reset     &kp H     &lt ARROW J       &kp K     &kp L    &kp SEMI &mt RBKT SQT
 &mt LSHFT LPAR &kp Z  &kp X    &kp C      &kp V     &kp B      &kp K_COFFEE         &kp BSLH     &kp N     &kp M       &kp COMMA &kp DOT  &kp FSLH &mt RSHFT RPAR
                           &kp LALT   &kp LGUI  &lt 2 DEL   &kp SPACE     &kp ENTER  &lt 2 BSPC  &lt 1 BSPC  &kp EQUAL  
             >;  
