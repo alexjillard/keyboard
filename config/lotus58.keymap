@@ -62,7 +62,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "D_DOWN";
             #binding-cells = <0>;
-            bindings = <&kp D>, <&kp Down>;
+            bindings = <&kp D>, <&kp DOWN>;
             mods = <(MOD_LGUI|MOD_LGUI)>;
         };
     };
